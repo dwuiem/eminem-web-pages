@@ -9,11 +9,11 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>Eminem</h1>
+      <h1 class="pulse-title">Eminem</h1>
       <nav>
         <ul class="nav-list">
           <li><a href="index.html">Главная</a></li>
-          <li><a href="about.html">Биография</a></li>
+          <li><a href="about.html" class="active">Биография</a></li>
           <li><a href="gallery.html">Галерея</a></li>
           <li><a href="discografy.html">Дискография</a></li>
         </ul>
@@ -23,25 +23,44 @@
 
   <main class="container">
     <section aria-labelledby="bio">
-      <h2 id="bio">Биография</h2>
-      <article>
+      <h2 id="bio" class="fade-up">Биография</h2>
+
+      <article class="fade-up">
         <h3>Ранние годы</h3>
-        <p>Эминем родился 17 октября 1972 года в Сент-Джозефе, штат Миссури. Вырос в Детройте, где начал свой путь в рэп-баттлах.</p>
+        <p>Эминем родился 17 октября 1972 года в Сент-Джозефе, штат Миссури, и провёл детство в Детройте. С раннего возраста он сталкивался с трудностями: частые переезды, нестабильная семья, издевательства в школе.</p>
+        <button class="reveal-btn" data-target="childhood">Подробнее</button>
+        <div id="childhood" class="hidden bio-extra">
+          <p>Маршалл начал писать тексты ещё в подростковом возрасте, выступал на рэп-баттлах под псевдонимом M&M, развивая свой уникальный стиль. Уже тогда его талант заметили местные продюсеры.</p>
+        </div>
       </article>
 
-      <article>
+      <article class="fade-up">
         <h3>Карьера</h3>
-        <p>Его дебютный альбом «The Slim Shady LP» (1999) принёс ему мировую известность. 
-        За ним последовали культовые альбомы, которые закрепили его статус в музыке.</p>
-        <ol>
-          <li>The Slim Shady LP (1999)</li>
-          <li>The Marshall Mathers LP (2000)</li>
-          <li>The Eminem Show (2002)</li>
-          <li>Encore (2004)</li>
-          <li>Recovery (2010)</li>
-          <li>Music to Be Murdered By (2020)</li>
-        </ol>
+        <p>В 1999 году дебютный альбом <em>The Slim Shady LP</em> принес ему мировую известность. Премии «Грэмми» и сотрудничество с Dr. Dre стали поворотным моментом.</p>
+        <button class="reveal-btn" data-target="career">Подробнее</button>
+        <div id="career" class="hidden bio-extra">
+          <p>Эминем стал символом белого рэпа и культуры хип-хопа, выпустил несколько культовых альбомов: <em>The Marshall Mathers LP</em>, <em>The Eminem Show</em>, <em>Encore</em>. Тексты открыто затрагивали личные, социальные и политические темы.</p>
+        </div>
       </article>
+
+      <article class="fade-up">
+        <h3>Проблемы и камбэк</h3>
+        <p>После борьбы с зависимостью Эминем временно ушёл со сцены, но вернулся с альбомами <em>Relapse</em> и <em>Recovery</em>.</p>
+        <button class="reveal-btn" data-target="comeback">Подробнее</button>
+        <div id="comeback" class="hidden bio-extra">
+          <p>Эти работы рассказали о личных трудностях артиста и его преодолении, показав, что он смог не только сохранить карьеру, но и стать ещё сильнее как артист и человек.</p>
+        </div>
+      </article>
+
+      <article class="fade-up">
+        <h3>Наследие</h3>
+        <p>Сегодня Эминем — один из самых влиятельных рэперов в истории, лауреат премий «Грэмми», «Оскар» и других наград. Он вдохновил целое поколение музыкантов и остаётся на вершине индустрии.</p>
+        <button class="reveal-btn" data-target="legacy">Подробнее</button>
+        <div id="legacy" class="hidden bio-extra">
+          <p>Его вклад в культуру включает в себя альбомы, фильмы, сотрудничество с другими артистами и влияние на развитие жанра хип-хоп во всём мире.</p>
+        </div>
+      </article>
+
     </section>
   </main>
 
@@ -50,5 +69,7 @@
       <p>© Eminem — фанатский сайт.</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
