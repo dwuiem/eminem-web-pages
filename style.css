@@ -1,4 +1,3 @@
-/* style.css — стили для StarBeat */
 :root{
   --bg: #0f1724;
   --card: #0b1220;
@@ -21,7 +20,6 @@ body{
 
 .container{max-width:1100px;margin:0 auto;padding:20px;}
 
-/* Header */
 .site-header{
   background: linear-gradient(90deg, rgba(255,255,255,0.02), transparent);
   border-bottom:1px solid rgba(255,255,255,0.03);
@@ -33,32 +31,23 @@ body{
 .nav-list a{color:var(--muted);text-decoration:none;padding:8px;border-radius:8px;display:inline-block;transition:transform 0.18s ease, color 0.18s ease;}
 .nav-list a:hover{transform:translateY(-3px);color:var(--accent)}
 
-/* Hero image */
 .hero-img{width:100%;max-width:420px;margin-top:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);box-shadow:0 6px 24px rgba(2,6,23,0.6)}
 
-/* Cards and sections */
 article{background:var(--card);padding:16px;border-radius:12px;margin:12px 0;border:1px solid rgba(255,255,255,0.02);}
 .cta{display:flex;gap:12px;align-items:center;margin-top:10px;}
 button, .external-link{background:var(--glass);color:var(--text);border:1px solid rgba(255,255,255,0.04);padding:10px 14px;border-radius:10px;cursor:pointer;text-decoration:none;transition:transform 0.18s ease, box-shadow 0.18s ease;}
 button:hover, .external-link:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(0,0,0,0.4)}
 
-/* Gallery grid */
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0;}
 .gallery-grid img{width:100%;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
 
-/* Hidden class for JS toggles */
 .hidden{display:none;opacity:0;transform:translateY(6px);transition:all 0.28s ease;}
 
-/* Footer */
 .site-footer{color:var(--muted);text-align:center;padding:20px 0;margin-top:24px;font-size:0.9rem;}
 
-/* Forms */
 form{display:grid;gap:8px;max-width:520px;}
 input, textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);color:var(--text)}
 
-/* MEDIA QUERIES */
-
-/* Mobile <=768px */
 @media (max-width: 768px){
   .site-header .container{flex-direction:column;align-items:flex-start;gap:8px}
   .nav-list{flex-wrap:wrap}
@@ -66,14 +55,12 @@ input, textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255
   .hero-img{max-width:100%}
 }
 
-/* Desktop >=1024px */
 @media (min-width: 1024px){
   body{font-size:16px}
   .gallery-grid{grid-template-columns:repeat(3,1fr)}
   .container{padding:32px}
 }
 
-/* Small hover animation for figures */
 figure{overflow:hidden}
 figure img{transition:transform 0.5s ease}
 figure:hover img{transform:scale(1.06)}
@@ -137,4 +124,95 @@ figure:hover img{transform:scale(1.06)}
 
 .album-links a:hover {
   background: #b00610;
+}
+
+.hero-section {
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a1a, #111);
+  color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.1);
+  transition: 0.3s ease;
+}
+
+.hero-section:hover {
+  transform: scale(1.01);
+}
+
+.hero-img {
+  max-width: 300px;
+  border-radius: 20px;
+  margin: 1rem 0;
+}
+
+.quote {
+  font-style: italic;
+  color: #ccc;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #e91e63;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ff4081;
+}
+
+.facts ul li, .tracks ol li {
+  margin-bottom: 0.6rem;
+}
+
+.tracks a {
+  color: #ff6ec7;
+  text-decoration: none;
+}
+
+.tracks a:hover {
+  text-decoration: underline;
+}
+
+.hidden-fact {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin: 2rem 0;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.05);
+}
+
+.hidden-fact h3 {
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.fact-text {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.fact-text.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
 }
