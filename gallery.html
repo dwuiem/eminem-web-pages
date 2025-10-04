@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eminem — Галерея</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Eminem</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">Биография</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="gallery">
+      <h2 id="gallery">Галерея</h2>
+      <p>Здесь вы найдете моменты из карьеры Эминема — концерты, обложки альбомов и кадры из клипов.</p>
+
+      <div class="gallery-grid">
+        <figure>
+          <img src="images/eminem-stage1.svg" alt="Выступление 1">
+          <figcaption>Эминем на сцене, начало 2000-х</figcaption>
+        </figure>
+        <figure>
+          <img src="images/eminem-stage2.svg" alt="Выступление 2">
+          <figcaption>Концерт в Детройте</figcaption>
+        </figure>
+        <figure>
+          <img src="images/eminem-stage3.svg" alt="Выступление 3">
+          <figcaption>Эминем в студии записи</figcaption>
+        </figure>
+      </div>
+
+      <button id="moreInfo">Показать дополнительную информацию</button>
+      <div id="extra" class="hidden" aria-hidden="true">
+        <h3>Интересный факт</h3>
+        <p>Эминем стал первым рэпером, получившим премию «Оскар» за песню «Lose Yourself» (фильм «8 Mile»).</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Eminem — Галерея</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
