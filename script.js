@@ -35,3 +35,26 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 });
+
+// Кнопки "развернуть" для биографии
+document.querySelectorAll('.reveal-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = document.getElementById(btn.dataset.target);
+    const hidden = target.classList.toggle('hidden');
+    btn.textContent = hidden ? 'Показать больше' : 'Скрыть';
+  });
+});
+
+// Появление блоков при скролле
+const faders = document.querySelectorAll('.fade-up');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+faders.forEach(el => observer.observe(el));
+
