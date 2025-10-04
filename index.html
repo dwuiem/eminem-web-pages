@@ -12,48 +12,81 @@
       <h1>Eminem</h1>
       <nav>
         <ul class="nav-list">
-          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html" class="active">Главная</a></li>
           <li><a href="about.html">Биография</a></li>
           <li><a href="gallery.html">Галерея</a></li>
-          <li><a href="discografy.html">Дискография</a></li>
+          <li><a href="contact.html">Дискография</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section aria-labelledby="intro">
-      <h2 id="intro">Добро пожаловать на сайт о Эминеме</h2>
-      <article>
-        <h3>Кто такой Eminem?</h3>
-        <p>Eminem (Маршалл Брюс Мэтерс III) — американский рэпер, автор песен, продюсер и актёр, 
-        один из самых влиятельных и успешных хип-хоп исполнителей в истории.</p>
-        <img src="images/eminem-portrait.svg" alt="Портрет Эминема" class="hero-img">
-      </article>
+    <section aria-labelledby="intro" class="hero-section">
+      <h2 id="intro">Эминем - живая легенда рэпа 🎤</h2>
 
-      <article>
-        <h3>Факты</h3>
-        <ul>
-          <li>Дата рождения: 17 октября 1972</li>
-          <li>Настоящее имя: Marshall Bruce Mathers III</li>
-          <li>Жанр: хип-хоп / рэп</li>
-          <li>Прозвище: Slim Shady</li>
-        </ul>
-      </article>
+      <article class="intro-article">
+        <h3>Marshall Mathers aka Slim Shady</h3>
+        <p>
+          <strong>Eminem</strong> — один из самых влиятельных рэперов в истории музыки.
+  Его творчество — это история человека, который поднялся с нуля и доказал,
+  что сила слова способна изменить судьбу. Он не боится говорить о трудностях,
+  ошибках и боли, превращая всё это в мощные тексты, которые находят отклик у миллионов людей по всему миру.
+        </p>
 
-      <div class="cta">
-        <button id="colorToggle">Изменить фон</button>
-        <a class="external-link" href="https://www.eminem.com" target="_blank" rel="noopener">Официальный сайт</a>
-      </div>
+        <blockquote class="quote">
+          “You can make something of your life, it just depends on your drive.” — Eminem
+        </blockquote>
+
+        <img src="images/eminem-portrait.jpg" alt="Эминем на сцене" class="hero-img">
+      </article>
     </section>
+
+    <section class="facts">
+      <h3>🔥 Интересные факты</h3>
+      <ul>
+        <li>💿 Альбом <em>The Marshall Mathers LP</em> — самый продаваемый рэп-альбом в истории США.</li>
+        <li>🎬 Эминем снялся в фильме <strong>8 Mile</strong>, получив «Оскар» за песню <em>Lose Yourself</em>.</li>
+        <li>⚡ В треке <em>Rap God</em> — 97 слов за 15 секунд!</li>
+        <li>🎤 Настоящее прозвище: <strong>Slim Shady</strong>.</li>
+      </ul>
+    </section>
+
+    <section class="tracks">
+      <h3>🎧 Самые известные треки</h3>
+      <ol>
+        <li><a href="https://music.yandex.ru/track/279647" target="_blank">Lose Yourself</a></li>
+        <li><a href="https://music.yandex.ru/track/279656" target="_blank">Love The Way You Lie (ft. Rihanna)</a></li>
+        <li><a href="https://music.yandex.ru/track/25809074" target="_blank">Rap God</a></li>
+        <li><a href="https://music.yandex.ru/track/279652" target="_blank">Without Me</a></li>
+        <li><a href="https://music.yandex.ru/track/279659" target="_blank">The Real Slim Shady</a></li>
+      </ol>
+    </section>
+
+    <section class="hidden-fact">
+      <h3>Фан факт</h3>
+      <button id="toggleFact" class="external-link">Показать фан факт</button>
+      <p id="factText" class="fact-text hidden">
+        Маршалл придумал псевдоним Slim Shady, сидя на унитазе. И так обрадовался, что сразу стал всем звонить.
+      </p>
+    </section>
+
+
+
+    <div class="cta">
+      <a class="external-link" href="https://www.eminem.com" target="_blank" rel="noopener">🌐 Официальный сайт Eminem</a>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© Eminem — фанатский сайт для учебного задания.</p>
+      <p>© Eminem — сайт для курса Web-программирование | Сделано с уважением к Slim Shady </p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
